@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+div {
+    border: lightgray dotted 1px;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
