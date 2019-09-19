@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Tall-variabler</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <h1>Tall-variabler</h1>
+        
+
+        <script>
+
+            let saldo = 1200;
+            const MAKS_UTTAK_PER_UKE = 10000;
+            document.write(`<p>Saldo: kr ${saldo}</p>`);
+
+            // Jeg vil sette inn 1000 kroner
+            saldo = saldo + 1000;
+            document.write(`<p>Saldo: kr ${saldo}</p>`);
+
+            // Men det finnes en annen måte som gjør akkurat det samme
+            saldo += 1000;
+            document.write(`<p>Saldo: kr ${saldo}</p>`);
+
+            // Ta ut 500
+            saldo -= 500;
+            document.write(`<p>Saldo: kr ${saldo}</p>`);
+
+            // Øke med 1
+            saldo++;
+            document.write(`<p>Saldo: kr ${saldo}</p>`);
+
+
+            let tekst = "Hei på deg. ";
+            tekst += "Din gamle sau."
+
+            document.write(tekst);
+
+        </script>
+    </body>
+</html>
