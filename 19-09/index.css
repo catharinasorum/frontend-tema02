@@ -4,8 +4,17 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-menu {
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
     
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
 }
 
 div {
