@@ -1,0 +1,13 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+#filmContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+}
+
+#filmContainer img{
+    width: 100%;
+}
