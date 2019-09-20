@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+
+body {
+    background-color: steelblue;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    margin: 2rem;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+#inpNavn {
+    margin: 1rem;
+    padding: 1rem;
+    width: 40%;
+}

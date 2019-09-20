@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: steelblue;
+}
+
+#txtKlikk {
+    font-size: 200px;
+    color: white;
+    user-select: none; /* går ikke ann å markere denne teksten */
+}

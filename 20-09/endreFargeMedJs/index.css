@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: steelblue;
+
+    transition: 2s background-color;
+}
+
+#inpFarge {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 400px;
+    padding: 14px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#inpFarge:focus {
+    outline: none;
+}
