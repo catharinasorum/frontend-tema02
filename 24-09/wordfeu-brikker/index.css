@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    color: #333;
+}
+
+
+#brett {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+}
+
+#bakgrunn {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 4px;
+}
+
+#brikker {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 4px;
+}
+
+#brikker div {
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+#bakgrunn div {
+    background-color: lightgrey;
+    border-radius: 4px;
+}
