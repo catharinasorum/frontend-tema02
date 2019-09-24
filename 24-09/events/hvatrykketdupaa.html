@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Hva trykket du på?</title>
+    </head>
+    <body>
+
+        <button id="btnEn">1</button>
+        <button id="btnTo">2</button>
+        <button id="btnTre">3</button>
+        
+        
+        <script>
+            const btnEn = document.querySelector("#btnEn");
+            const btnTo = document.querySelector("#btnTo");
+            const btnTre = document.querySelector("#btnTre");
+
+            function hvemErJeg(evt) {
+                const knappen = evt.target;
+                console.log("Du trykket på " + knappen.id);
+            }
+
+            btnEn.addEventlistener("click", hvemErJeg);
+            btnTo.addEventlistener("click", hvemErJeg);
+            btnTre.addEventlistener("click", hvemErJeg);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Skjema og funksjoner</title>
+
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <form id="skjemaSkurker">
+            <input type="text" id="inpSkurk" required>
+            <button type="submit">Registrer skurk</button>
+        </form>
+
+        <ul id="skurkeliste">
+
+        </ul>
+
+        <script>
+            const skjemaSkurker = document.querySelector("#skjemaSkurker");
+            const inpSkurk = document.querySelector("#inpSkurk");
+            const skurkeliste = document.querySelector("#skurkeliste");
+
+            // Denne blir lagret i Nettleseren
+            localStorage.superskurk = "Cruella De Ville";
+
+
+            function registrerSkurk(evt) {
+                evt.preventDefault(); // hindrer skjemaet å sende til ny side
+
+                const skurk = inpSkurk.value;
+                skurkeliste.innerHTML += `
+                    <li>${skurk}</li> 
+                `;
+
+                skjemaSkurker.reset();
+            }
+
+
+            skjemaSkurker.addEventListener("submit", registrerSkurk);
+
+
+        </script>
+    </body>
+</html>

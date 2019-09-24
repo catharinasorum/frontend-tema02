@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Lurelink</title>
+    </head>
+    <body>
+
+        <a id="vglink" href="http://www.vg.no">Les mer på VG</a>
+        
+        <script>
+            const vglink = document.querySelector("#vglink");
+
+            function lureri(evt) {
+                evt.preventDefault(); // vil ikke åpne siden
+                console.log(evt); // vil vise informasjonen i evt.
+                document.location.href = "http://www.db.no"; // vil endre lokasjon fra vg til db
+            }
+
+            vglink.addEventListener("click", lureri);
+        </script>
+    </body>
+</html>
