@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Gjett tallet!</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <h1>Gjett tallet</h1>
+        
+
+        <script>
+
+            const fasit = 20;
+            const inpDittSvar = prompt("Gjett på et tall");
+
+            // Gjør om teksten til et tall. All input er tekst
+            const dittSvar = Number(inpDittSvar);
+
+            if(dittSvar > fasit) {
+                document.write("<h2>Tallet ditt er for høyt!</h2>");
+            } else if (dittSvar < fasit) {
+                document.write("<h2>Tallet ditt er for lavt!</h2>");
+            } else {
+                document.write("<h2>Helt riktig! Du er god!</h2>");
+            }
+
+
+        </script>
+    </body>
+</html>
