@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Finne rente</title>
+    </head>
+    <body>
+        
+
+        <script>
+            // rente = 10%;
+            const vekstfaktor = 1.1;
+            const belop = 2000;
+            let n = 0; // Antall år pengene står i banken
+
+            while(n <= 20) {
+                const spenn = belop * Math.pow(vekstfaktor, n); // kan også skrive: = belop * vekstfaktor**n
+
+                document.write(`
+                    <div>År: ${n}, Beløp: kr. ${spenn.toFixed(02)}</div> 
+                `);
+
+                n++;
+            }
+            //toFixed(2) gjør at vi får to desimaler
+
+        </script>
+    </body>
+</html>
