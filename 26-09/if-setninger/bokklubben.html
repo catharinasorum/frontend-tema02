@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Bokklubben.no</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <section id="varer">
+            <button id="btn01" data-isbn="123" data-pris="200">Kjøp Odysseen</button>
+            <button id="btn02" data-isbn="324" data-pris="310">Kjøp Donald</button>
+            <button id="btn03" data-isbn="435" data-pris="900">Kjøp Fantomet</button>
+        </section>
+        
+
+        <script>
+
+            const bnt01 = document.querySelector("#btn01");
+            const bnt02 = document.querySelector("#btn02");
+            const bnt03 = document.querySelector("#btn03");
+
+            function addToBasket(evt) {
+                const knapp = evt.target;
+                console.log(knapp.dataset.isbn);
+                console.log(knapp.dataset.pris);
+                console.log(knapp.id);
+                console.log(knapp.innerText);
+            }
+
+            btn01.addEventListener("click", addToBasket);
+            btn02.addEventListener("click", addToBasket);
+            btn03.addEventListener("click", addToBasket);
+
+        </script>
+    </body>
+</html>
