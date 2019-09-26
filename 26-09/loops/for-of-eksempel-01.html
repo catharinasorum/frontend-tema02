@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>For of-loop - eksempel 1</title>
+    </head>
+    <body>
+        
+
+        <script>
+
+            // Array, bruk flertallsform
+            const bloggere = [
+                "Annijor", 
+                "Pappahjerte",
+                "Funkygine",
+                "Pilotfrue",
+                "Fotballfrue",
+                "Voe",
+                "Sophie Elise"
+                ];
+
+            for(const blogger of bloggere) {
+                document.write("<h2>" + blogger + "</h2>");
+            }
+
+            console.log("Nå har vi traversert alle bloggerne");
+
+        </script>
+    </body>
+</html>

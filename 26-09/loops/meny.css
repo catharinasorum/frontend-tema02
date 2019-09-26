@@ -1,0 +1,18 @@
+#topMenu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+}
+
+#topMenu a {
+    font-family: sans-serif;
+    color: black;
+    background-color: rgba(17, 17, 17, 0.082);
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+}
+
+#topMenu a.active {
+    font-weight: 700;
+}
