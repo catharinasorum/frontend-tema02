@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: url("./ny-1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+h1 {
+    color: white;
+    filter: drop-shadow(2px 1px 0 black);
+}
+
+.usynlig {
+    display: none;
+}
+
