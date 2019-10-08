@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+main {
+    background-image: url("img/bakgrunn.png");
+    position: relative;
+    background-color: lightblue;
+    height: 384px;
+    width: 288px;
+    margin: 100px auto;
+    overflow: hidden;
+}
+
+#theBird {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 30px;
+    user-select: none;
+   
+}
