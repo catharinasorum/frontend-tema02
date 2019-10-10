@@ -1,0 +1,14 @@
+svg {
+    border: 1px solid black;
+}
+rect {
+    x: 350;
+    fill: brown;
+    transition: 0.5s;
+    rx: 20;
+    ry: 20;
+}
+
+rect:hover {
+    fill: rgb(206, 82, 82);
+}

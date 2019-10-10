@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+main {
+    background-color: rgb(197, 228, 255);
+    height: 100vh;
+}
+
+@keyframes fade {
+    to {
+        opacity: 0;
+        transform: scale(5);
+    }
+}
+
+
+.prikk {
+    width: 20px;
+    height: 20px;
+    border: 2px solid seagreen;
+    position: absolute; /* Skal dukke opp der vi trykker */
+    left: 300px;
+    top: 200px;
+    border-radius: 50%;
+    animation: fade 5s forwards;
+}
