@@ -1,0 +1,42 @@
+#ur {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#ur div {
+    position: absolute;
+    width: 2px;
+    height: 4px;
+    background-color: black;
+    transform-origin: center bottom;
+    text-align: center;
+    bottom: 50%;
+}
+
+#ur div.tjukk {
+    width: 4px;
+    height: 7px;
+}
+
+#ur div.t {
+    width: 40px;
+    background-color: transparent;
+}
+
+#ur .tall {
+    display: inline-block;
+    text-align: center;
+}
+
+#sekundviser {
+    width: 4px;
+    height: 150px;
+    background-color: orange;
+    position: absolute;
+    bottom: 50%;
+    transform-origin: center bottom;
+}
